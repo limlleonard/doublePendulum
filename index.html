@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Pendulum Simulation</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="control">
+            <h2>Double Pendulum</h2>
+            <form action="" id="form">
+                <label for="l1">L1 (0.1 - 1):</label>
+                <input type="number" id="l1" name="l1" min="0.1" max="1" step="0.1" value="1">
+                <label for="l2">L2 (0.1 - 1):</label>
+                <input type="number" id="l2" name="l2" min="0.1" max="1" step="0.1" value="1">
+                <label for="m1">m1 (1 - 10):</label>
+                <input type="number" id="m1" name="m1" min="1" max="10" value="1">
+                <label for="m2">m2 (1 - 10):</label>
+                <input type="number" id="m2" name="m2" min="1" max="10" value="1">
+                <label for="g">g (1 - 10):</label>
+                <input type="number" id="g" name="g" min="1" max="10" value="10">
+                <!-- <label for="tRate">Time rate:</label>
+                <input type="number" id="tRate" name="tRate" min="0.3" max="3" step="0.1" value="1"> -->
+            </form>
+
+            <div>
+                <input type="checkbox" id="trace" name="trace" value="trace" checked>
+                <label for="trace"> show trace</label>
+            </div>
+            <button onclick="updateVar()">Update variables</button>
+            <button onclick="resetVar()">Reset variables</button>
+            <button onclick="resetPos()">Reset position</button>
+            <button onclick="toggleAnimation()">Start / Pause</button>
+            <p>Source code:</p>
+            <p>www</p>
+        </div>
+        <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
