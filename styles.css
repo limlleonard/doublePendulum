@@ -36,11 +36,14 @@ h2 {
 
 #control form,
 #control {
-    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 4px;
     /* border: 1px solid red; */
+}
+
+#control {
+    padding: 20px;
 }
 
 #control button {
